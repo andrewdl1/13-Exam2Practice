@@ -220,11 +220,11 @@ def practice_problem2b(sequence):
     #    DIFFICULTY:      7
     #    TIME ESTIMATE:   10 minutes.
     ###########################################################################
-    new_seq = ''
+    output = ''
     for k in range(len(sequence)):
-        if len(sequence[k] > 0):
-            new_seq = new_seq + sequence[k][0]
-    return new_seq
+        if sequence[k] != '':
+            output += sequence[k][0]
+    return output
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
